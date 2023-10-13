@@ -5,7 +5,7 @@ serverless deploy
 
 Local Test
 ```bash
-serverless offline --httpPort 3001
+serverless offline -s local --httpPort 3003 --websocketPort 3004 --lambdaPort 3005
 ```
 
 Self sign SSL
