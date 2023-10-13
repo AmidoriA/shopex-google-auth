@@ -33,7 +33,6 @@ module.exports.googleAuthUrl = async (event, context) => {
     const clientId = process.env.GOOGLE_CLIENT_ID;
     const redirectUri = `${process.env.ROOT_URL}/${process.env.STAGE}/auth/google/callback`;
     const scope = 'profile email';
-    // const scope = 'https://www.googleapis.com/auth/userinfo.profile';
   
     const loginURL = `${googleAuthUrl}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=code`;
   

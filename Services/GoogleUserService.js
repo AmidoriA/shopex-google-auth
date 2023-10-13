@@ -11,7 +11,6 @@ class GoogleUserService {
     }
 
     async retriveJwt(googleUser) {
-        const JWT_SECRET = 1234;
         let user = await this.googleUserRepository.getUser(googleUser);
         if (user == undefined) {
             user = await this.googleUserRepository.createUser(googleUser);
